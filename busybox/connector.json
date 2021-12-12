@@ -1,0 +1,16 @@
+{
+  "name": "simple-elasticsearch-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "tasks.max": "1",
+    "topics": "my_favorite_topic",
+    "topic.index.map": "my_favorite_topic:tweet-index",
+    "key.ignore": "true",
+    "schema.ignore": "true",
+    "connection.url": "http://elasticsearch:9200",
+    "type.name": "_doc",
+    "name": "simple-elasticsearch-connector",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false"
+  }
+}

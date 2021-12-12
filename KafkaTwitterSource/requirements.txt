@@ -1,0 +1,4 @@
+kafka-python==2.0.2
+apache-flink==1.14.0
+requests~=2.26.0
+nltk==3.4.5
